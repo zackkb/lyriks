@@ -14,11 +14,12 @@ const AroundYou = () => {
   useEffect(() => {
     axios.get('https://geo.ipify.org/api/v2/country?apiKey=at_OPUx1i81h8Si5qjIEdcbGZB7BAPvu')
       .then((res) => setCountry(res?.data?.location?.country))
+      // eslint-disable-next-line no-console
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));
   }, [country]);
 
-  if (isFetching && loading) return <Loader title="Loading songs around you" />;
+  if (isFetching && loading) return <Loader title="Loading songs around you..." />;
 
   if (error && country) return <Error />;
 
