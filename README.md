@@ -1,5 +1,7 @@
 # lyriks
 
+⚡ Live version: https://lyriks-zachb.netlify.app ⚡
+
 ## Project Description
 
 Lyriks is a Spotify clone built with React that fetches song data from the ShazamCore API. You can choose from multiple of genres and dozens of artists. This project was created for a few reasons:
