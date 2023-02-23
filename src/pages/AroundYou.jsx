@@ -14,7 +14,7 @@ const AroundYou = () => {
   useEffect(() => {
     axios
       .get(
-        "https://geo.ipify.org/api/v2/country?apiKey=at_OPUx1i81h8Si5qjIEdcbGZB7BAPvu"
+        "https://geo.ipify.org/api/v2/country?apiKey=at_8ibcFgDly1TtvH4GldEDTllWPAnxn"
       )
       .then((res) => setCountry(res?.data?.location?.country))
       // eslint-disable-next-line no-console
